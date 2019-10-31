@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Header from "./Components/Header";
+import Layout from "./Components/Layout";
+import Footer from "./Components/Footer";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  state = {
+    widgets: [
+      { name: "Widget1", left: true },
+      { name: "Widget2", left: true },
+      { name: "Widget3", left: true },
+      { name: "Widget4", left: false },
+      { name: "Widget5", left: false },
+      { name: "Widget6", left: false }
+    ]
+  };
+  func = childData => {
+    this.setState({ widgets: childData });
+  };
+  render() {
+    return (
+      <div className="App">
+        <Header data={this.state.widgets}></Header>
+        <Layout
+          parentCallback={this.func}
+          widgets={this.state.widgets}
+        ></Layout>
+        <Footer></Footer>
+      </div>
+    );
+  }
 }
 
 export default App;

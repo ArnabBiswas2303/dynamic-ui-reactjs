@@ -1,0 +1,24 @@
+.LeftLayout {
+  align-self: center;
+  width: 0vw;
+  height: 97%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px 0px 0px 10px;
+  transition: 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.LeftLayout > div {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+
+.LeftLayout > div > .Container {
+  width: 200px;
+  min-height: 300px;
+}

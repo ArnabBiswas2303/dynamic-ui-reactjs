@@ -1,0 +1,11 @@
+.Container {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  color: white;
+  text-align: center;
+  justify-self: stretch;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-self: center;
+}

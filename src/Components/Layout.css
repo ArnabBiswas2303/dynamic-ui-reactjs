@@ -1,0 +1,9 @@
+.Layout {
+  padding: 3px;
+  box-sizing: content-box;
+  width: 98vw;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}

@@ -1,0 +1,52 @@
+.MainLayout {
+  width: 76vw;
+  height: 97%;
+  background: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+}
+
+.MainLayout .leftArrow {
+  line-height: 0.8;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  color: white;
+  background-color: #2c3e50;
+  margin-left: -10px;
+  border-radius: 0 10px 10px 0;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.MainLayout .rightArrow {
+  line-height: 0.8;
+  color: white;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #2c3e50;
+  margin-right: -10px;
+  border-radius: 10px 0 0 10px;
+  transition: 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.Box {
+  flex-grow: 1;
+}
+
+.expand {
+  width: 15vw !important;
+}
+
+.grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}

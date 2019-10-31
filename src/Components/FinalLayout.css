@@ -1,0 +1,29 @@
+.FinalLayout {
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.FinalLayout > h1 {
+  background-color: #1b9cfc;
+  padding: 10px 30px;
+  color: white;
+  border-radius: 5px;
+}
+
+.Display {
+  width: 90vw;
+  height: 85vh;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+}
